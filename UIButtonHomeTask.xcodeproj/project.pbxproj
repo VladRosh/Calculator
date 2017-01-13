@@ -13,6 +13,8 @@
 		F50344451E2688B80084CFF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50344431E2688B80084CFF8 /* Main.storyboard */; };
 		F50344471E2688B80084CFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50344461E2688B80084CFF8 /* Assets.xcassets */; };
 		F503444A1E2688B80084CFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50344481E2688B80084CFF8 /* LaunchScreen.storyboard */; };
+		F50344521E2688CA0084CFF8 /* Task in Resources */ = {isa = PBXBuildFile; fileRef = F50344511E2688CA0084CFF8 /* Task */; };
+		F50344551E268E280084CFF8 /* CalcLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F50344541E268E280084CFF8 /* CalcLogic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		F50344461E2688B80084CFF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F50344491E2688B80084CFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F503444B1E2688B80084CFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50344511E2688CA0084CFF8 /* Task */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Task; path = ../Task; sourceTree = "<group>"; };
+		F50344531E268E280084CFF8 /* CalcLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcLogic.h; sourceTree = "<group>"; };
+		F50344541E268E280084CFF8 /* CalcLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcLogic.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +63,13 @@
 		F50344391E2688B80084CFF8 /* UIButtonHomeTask */ = {
 			isa = PBXGroup;
 			children = (
+				F50344511E2688CA0084CFF8 /* Task */,
 				F503443D1E2688B80084CFF8 /* AppDelegate.h */,
 				F503443E1E2688B80084CFF8 /* AppDelegate.m */,
 				F50344401E2688B80084CFF8 /* ViewController.h */,
 				F50344411E2688B80084CFF8 /* ViewController.m */,
+				F50344531E268E280084CFF8 /* CalcLogic.h */,
+				F50344541E268E280084CFF8 /* CalcLogic.m */,
 				F50344431E2688B80084CFF8 /* Main.storyboard */,
 				F50344461E2688B80084CFF8 /* Assets.xcassets */,
 				F50344481E2688B80084CFF8 /* LaunchScreen.storyboard */,
@@ -140,6 +148,7 @@
 				F503444A1E2688B80084CFF8 /* LaunchScreen.storyboard in Resources */,
 				F50344471E2688B80084CFF8 /* Assets.xcassets in Resources */,
 				F50344451E2688B80084CFF8 /* Main.storyboard in Resources */,
+				F50344521E2688CA0084CFF8 /* Task in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 				F50344421E2688B80084CFF8 /* ViewController.m in Sources */,
 				F503443F1E2688B80084CFF8 /* AppDelegate.m in Sources */,
 				F503443C1E2688B80084CFF8 /* main.m in Sources */,
+				F50344551E268E280084CFF8 /* CalcLogic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +286,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIButtonHomeTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,6 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIButtonHomeTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

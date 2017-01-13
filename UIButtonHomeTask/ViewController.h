@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalcLogic.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <VVCalcLogicDelegate>
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *numpad;
+@property (weak, nonatomic) IBOutlet UILabel *display;
+@property (strong, nonatomic) CalcLogic* calcLogic;
 
 
 @end
